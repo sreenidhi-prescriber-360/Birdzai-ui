@@ -19,6 +19,9 @@ function myFunction0() {
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
 }
+function myFunction2() {
+    document.getElementById("sidebar-Dropdown").classList.toggle("show");
+}
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {

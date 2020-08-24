@@ -14,17 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Font Families -->
-    <link href="/assets/fonts/brandon-grotesque/style.css" rel="stylesheet">
-    <link href="/assets/fonts/open-sans/style.css" rel="stylesheet" type="text/css">
-    <link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/fonts/brandon-grotesque/style.css" rel="stylesheet">
+    <link href="/fonts/open-sans/style.css" rel="stylesheet" type="text/css">
+    <link href="/fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Global Stylesheet -->
 
     <!-- Page Level Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/pages/dashboard.css">
+    <link rel="stylesheet" href="/css/pages/dashboard.css">
 </head>
-
-
 <body>
     <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -41,7 +39,7 @@
                         </div>
                         <div class="profile-section">
                             <div class="dropdown notification">
-                                <img src="/assets/img/user/Notification.png" onclick="myFunction()"
+                                <img src="/img/user/Notification.png" onclick="myFunction()"
                                     class="dropbtn bg-transparent border-0 p-0">
                                 <div id="myDropdown" class="dropdown-content text-left">
                                     <a class="dropdown-item" href="#">notification 1</a>
@@ -65,45 +63,61 @@
                 <ul class="sidebar-nav">
                     <li class="user-section pb-2">
                         <ul>
-                            <li class="sidebar-profile"><img src="/assets/img/user/user.jpg" alt="user"></li>
+                            <li class="sidebar-profile"><img src="/img/user/user.jpg" alt="user"></li>
                             <li class="pt-1">
                                 <h5>
-                                    <dt class="sidebar-name text-white">Jane Smith</dt>
+
+                                    <div class="dropdown float-none">
+                                        <dt class="sidebar-name text-white dropbtn bg-transparent border-0 p-0"
+                                            onclick="myFunction2()">Jane Smith <i class="fa fa-caret-down"
+                                                aria-hidden="true"></i></dt>
+                                        <div id="sidebar-Dropdown" class="dropdown-content text-left">
+                                            <a class="dropdown-item text-black" href="#"><img
+                                                    src="/img/sidebar/My profile.png" alt="profile-icon"><span> My
+                                                    profile</span></a>
+                                            <a class="dropdown-item text-black" href="#"><img
+                                                    src="/img/sidebar/Settings.png" alt="profile-icon"><span>
+                                                    Settings</span></a>
+                                            <a class="dropdown-item text-black" href="#"><img
+                                                    src="/img/sidebar/Logout.png" alt="profile-icon"><span>
+                                                    Logout</span></a>
+                                        </div>
+                                    </div>
                                 </h5>
                                 <p class="designation pt-1">Designation</p>
                             </li>
                         </ul>
                     </li>
                     <li class="active"><a class="d-flex" href="">
-                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Dashboard icon.png"
+                            <div class="dashboard-icons"><img src="/img/sidebar/Dashboard icon.png"
                                     alt="dashboard-icon">
                             </div>
                             <div class="sidebar-items">Dashboard</div>
                         </a>
                     </li>
                     <li><a class="d-flex" href="/test-copy">
-                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Company icon.png" alt="dashboard-icon">
+                            <div class="dashboard-icons"><img src="/img/sidebar/Company icon.png" alt="dashboard-icon">
                             </div>
                             <div class="sidebar-items">Companies</div>
                         </a>
                     </li>
                     <li>
                         <a class="d-flex" href="">
-                            <div class="dashboard-icons"><img src="/assets/img/sidebar/services icon.png" alt="dashboard-icon">
+                            <div class="dashboard-icons"><img src="/img/sidebar/services icon.png" alt="dashboard-icon">
                             </div>
                             <div class="sidebar-items">Services</div>
                         </a>
                     </li>
                     <li>
                         <a class="d-flex" href="">
-                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Product icon.png" alt="dashboard-icon">
+                            <div class="dashboard-icons"><img src="/img/sidebar/Product icon.png" alt="dashboard-icon">
                             </div>
                             <div class="sidebar-items">Products</div>
                         </a>
                     </li>
                     <li>
                         <a class="d-flex" href="">
-                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Calender icon.png" alt="dashboard-icon">
+                            <div class="dashboard-icons"><img src="/img/sidebar/Calender icon.png" alt="dashboard-icon">
                             </div>
                             <div class="sidebar-items">Calendar</div>
                         </a>
@@ -138,28 +152,34 @@
                             </div>
                         </div>
                         <div class="row py-2">
-                            <div class="col-lg-3 col-md-6 text-center mb-1">
-                                <div class="bg-gray-200 p-2 rounded">
-                                    <h6>Total sample request</h6>
+                            <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded grid-box">
+                                    <h6>Total REP Visit</h6>
                                     <h2 class="text-danger">3456</h2>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 text-center mb-1">
-                                <div class="bg-gray-200 p-2 rounded">
-                                    <h6>Sample received</h6>
+                            <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded grid-box">
+                                    <h6>Total MSL Visit</h6>
                                     <h2 class="text-warning">2356</h2>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 text-center mb-1">
-                                <div class="bg-gray-200 p-2 rounded">
-                                    <h6>New samples</h6>
+                            <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded grid-box">
+                                    <h6>Total samples</h6>
                                     <h2 class="text-info">456</h2>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 text-center mb-1">
-                                <div class="bg-gray-200 p-2 rounded">
-                                    <h6>Trials</h6>
+                            <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded grid-box">
+                                    <h6>Total Medical information</h6>
                                     <h2 class="text-success">3456</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded grid-box">
+                                    <h6>Total Adverse Events</h6>
+                                    <h2 class="text-dark-orchid">3456</h2>
                                 </div>
                             </div>
                         </div>
@@ -180,31 +200,36 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 text-center mb-1">
-                            <div class="bg-white py-4 px-1 rounded box services">
-                                <img src="/assets/img/services/Request REP Visit.png" alt="services">
+                        <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                            <div class="bg-white p-2 rounded box services">
+                                <img src="/img/services/Request REP Visit.png" alt="services">
                                 <h6 class="text-black">Request REP Visit</h6>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 text-center mb-1">
-                            <div class="bg-white py-4 px-1 rounded box services">
-                                <img src="/assets/img/services/Request MSL Visit.png" alt="services">
+                        <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                            <div class="bg-white p-2 rounded box services">
+                                <img src="/img/services/Request MSL Visit.png" alt="services">
                                 <h6 class="text-black">Request MSL Visit</h6>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 text-center mb-1">
-                            <div class="bg-white py-4 px-1 rounded box services">
-                                <img src="/assets/img/services/Request Samples.png" alt="services">
+                        <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                            <div class="bg-white p-2 rounded box services">
+                                <img src="/img/services/Request Samples.png" alt="services">
                                 <h6 class="text-black">Request Samples</h6>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 text-center mb-1">
-                            <div class="bg-white py-4 px-1 rounded box services">
-                                <img src="/assets/img/services/Request Medical  information.png" alt="services">
+                        <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                            <div class="bg-white p-2 rounded box services">
+                                <img src="/img/services/Request Medical  information.png" alt="services">
                                 <h6 class="text-black">Request Medical information</h6>
                             </div>
                         </div>
-
+                        <div class="col-lg-2dot4 col-md-6 text-center mb-1">
+                            <div class="bg-white p-2 rounded box services">
+                                <img src="/img/services/Request Medical  information.png" alt="services">
+                                <h6 class="text-black">Request Adverse Events</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--Service end-->
@@ -228,7 +253,7 @@
                                             <th>Date</th>
                                             <th>Services</th>
                                             <th>Status</th>
-                                            <th>Action</th>
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -239,9 +264,11 @@
                                             <td>23/12/2000</td>
                                             <td>Request REP Visit</td>
                                             <td>pending</td>
-                                            <td><a href=""><img src="/assets/img/action/eye.png" alt="view"></a>
-                                                <a href=""><img src="/assets/img/action/delete.png" alt="delete"></a>
-                                                <a href=""><img src="/assets/img/action/edit.png" alt="edit"></a>
+                                            <td class="text-center"><a href=""><img src="/img/action/eye.png" alt="view"
+                                                        class="eye"></a>
+                                                <a href=""><img src="/img/action/delete.png" alt="delete"
+                                                        class="delete"></a>
+                                                <a href=""><img src="/img/action/edit.png" alt="edit" class="edit"></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -251,9 +278,11 @@
                                             <td>23/12/2000</td>
                                             <td>Request REP Visit</td>
                                             <td>pending</td>
-                                            <td><a href=""><img src="/assets/img/action/eye.png"></a>
-                                                <a href=""><img src="/assets/img/action/delete.png"></a>
-                                                <a href=""><img src="/assets/img/action/edit.png"></a>
+                                            <td class="text-center"><a href=""><img src="/img/action/eye.png" alt="view"
+                                                        class="eye"></a>
+                                                <a href=""><img src="/img/action/delete.png" alt="delete"
+                                                        class="delete"></a>
+                                                <a href=""><img src="/img/action/edit.png" alt="edit" class="edit"></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -261,11 +290,13 @@
                                             <td>company</td>
                                             <td>product</td>
                                             <td>23/12/2000</td>
-                                            <td>23</td>
+                                            <td>Request REP Visit</td>
                                             <td>pending</td>
-                                            <td><a href=""><img src="/assets/img/action/eye.png"></a>
-                                                <a href=""><img src="/assets/img/action/delete.png"></a>
-                                                <a href=""><img src="/assets/img/action/edit.png"></a>
+                                            <td class="text-center"><a href=""><img src="/img/action/eye.png" alt="view"
+                                                        class="eye"></a>
+                                                <a href=""><img src="/img/action/delete.png" alt="delete"
+                                                        class="delete"></a>
+                                                <a href=""><img src="/img/action/edit.png" alt="edit" class="edit"></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -273,20 +304,23 @@
                                             <td>company</td>
                                             <td>product</td>
                                             <td>23/12/2000</td>
-                                            <td>23</td>
+                                            <td>Request REP Visit</td>
                                             <td>pending</td>
-                                            <td><a href=""><img src="/assets/img/action/eye.png"></a>
-                                                <a href=""><img src="/assets/img/action/delete.png"></a>
-                                                <a href=""><img src="/assets/img/action/edit.png"></a>
+                                            <td class="text-center"><a href=""><img src="/img/action/eye.png" alt="view"
+                                                        class="eye"></a>
+                                                <a href=""><img src="/img/action/delete.png" alt="delete"
+                                                        class="delete"></a>
+                                                <a href=""><img src="/img/action/edit.png" alt="edit" class="edit"></a>
                                             </td>
                                         </tr>
+
                                     </tbody>
                                 </table>
                                 <a href="">
                                     <h6 class="view mr-3 mb-1 text-black float-right">View Details</h6>
                                 </a>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -363,14 +397,14 @@
                                 <div class="product-list">
                                     <div class="row">
                                         <div class="col-xl-6 d-lg-flex px-2 py-1">
-                                            <img src="/assets/img/products/Image-17.png" alt="product">
+                                            <img src="/img/products/Image-17.png" alt="product">
                                             <div class="d-centered pl-1 product-desc">
                                                 <h6 class="text-black">Product Name</h6>
                                                 <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 d-lg-flex px-2 py-1">
-                                            <img src="/assets/img/products/product-jpeg-500x500.png" alt="product">
+                                            <img src="/img/products/product-jpeg-500x500.png" alt="product">
                                             <div class="d-centered pl-1 product-desc">
                                                 <h6 class="text-black">Product Name</h6>
                                                 <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
@@ -379,14 +413,14 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-6 d-lg-flex px-2 py-1">
-                                            <img src="/assets/img/products/ore.png" alt="product">
+                                            <img src="/img/products/ore.png" alt="product">
                                             <div class="d-centered pl-1 product-desc">
                                                 <h6 class="text-black">Product Name</h6>
                                                 <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 d-lg-flex px-2 py-1">
-                                            <img src="/assets/img/products/Remifentanil_group.png" alt="product">
+                                            <img src="/img/products/Remifentanil_group.png" alt="product">
                                             <div class="d-centered pl-1 product-desc">
                                                 <h6 class="text-black">Product Name</h6>
                                                 <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
@@ -411,7 +445,7 @@
             <!--Body end-->
         </section>
         <!-- Page Level Scripts -->
-        <script src="/assets/js/main.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
