@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dasboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Families -->
+    <link href="/assets/fonts/brandon-grotesque/style.css" rel="stylesheet">
+    <link href="/assets/fonts/open-sans/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Global Stylesheet -->
+
+    <!-- Page Level Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/pages/dashboard.css">
+</head>
+
+
+<body>
+    <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+    <div id="wrapper">
+        <nav>
+            <!--Header-->
+            <div class="navbar box  fixed-top bg-white">
+                <div class="container-fluid">
+                    <div class="header-row">
+                        <div class="form-group search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control" placeholder="Search Company">
+                        </div>
+                        <div class="profile-section">
+                            <div class="dropdown notification">
+                                <img src="/assets/img/user/Notification.png" onclick="myFunction()"
+                                    class="dropbtn bg-transparent border-0 p-0">
+                                <div id="myDropdown" class="dropdown-content text-left">
+                                    <a class="dropdown-item" href="#">notification 1</a>
+                                    <a class="dropdown-item" href="#">notification 2</a>
+                                    <a class="dropdown-item" href="#">notification 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Side navbar-->
+            <aside id="sidebar-wrapper" class="navbar-collapse navbar-ex1-collapse">
+                <div class="navbar-header  toggle" id="sidebar-toggle">
+                    <a href="#" class="navbar-brand"><i class="fa fa-angle-left"></i></a>
+                </div>
+                <div class="sidebar-brand">
+                    <div class="w-100 py-2 px-1 logo-img"></div>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="user-section pb-2">
+                        <ul>
+                            <li class="sidebar-profile"><img src="/assets/img/user/user.jpg" alt="user"></li>
+                            <li class="pt-1">
+                                <h5>
+                                    <dt class="sidebar-name text-white">Jane Smith</dt>
+                                </h5>
+                                <p class="designation pt-1">Designation</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active"><a class="d-flex" href="">
+                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Dashboard icon.png"
+                                    alt="dashboard-icon">
+                            </div>
+                            <div class="sidebar-items">Dashboard</div>
+                        </a>
+                    </li>
+                    <li><a class="d-flex" href="/test-copy">
+                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Company icon.png" alt="dashboard-icon">
+                            </div>
+                            <div class="sidebar-items">Companies</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="">
+                            <div class="dashboard-icons"><img src="/assets/img/sidebar/services icon.png" alt="dashboard-icon">
+                            </div>
+                            <div class="sidebar-items">Services</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="">
+                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Product icon.png" alt="dashboard-icon">
+                            </div>
+                            <div class="sidebar-items">Products</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="">
+                            <div class="dashboard-icons"><img src="/assets/img/sidebar/Calender icon.png" alt="dashboard-icon">
+                            </div>
+                            <div class="sidebar-items">Calendar</div>
+                        </a>
+                    </li>
+            </aside>
+        </nav>
+
+        <!--Body start-->
+
+        <section id="content-wrapper" class="mt-2">
+            <div class="main-section p-md-4">
+                <!--Sample start-->
+                <div class="py-2">
+                    <div class="bg-white rounded p-2 box">
+                        <div class="row">
+                            <div class="col-md-8 mb-1"><span class="title text-gray-300">Good morning,</span><span
+                                    class="text-secondary user-name font-weight-bold"> Dr Jane Smith</span>
+                                <p class="text-gray-300">Here are your important task, updates and alerts you can
+                                    set
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-right">
+                                <div class="dropdown">
+                                    <button onclick="myFunction1()" class="dropbtn">Choose by product<i
+                                            class="fa fa-caret-down ml-1" aria-hidden="true"></i></button>
+                                    <div id="myDropdown1" class="dropdown-content text-left">
+                                        <a class="dropdown-item" href="#">product 1</a>
+                                        <a class="dropdown-item" href="#">product 2</a>
+                                        <a class="dropdown-item" href="#">product 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-lg-3 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded">
+                                    <h6>Total sample request</h6>
+                                    <h2 class="text-danger">3456</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded">
+                                    <h6>Sample received</h6>
+                                    <h2 class="text-warning">2356</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded">
+                                    <h6>New samples</h6>
+                                    <h2 class="text-info">456</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center mb-1">
+                                <div class="bg-gray-200 p-2 rounded">
+                                    <h6>Trials</h6>
+                                    <h2 class="text-success">3456</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Sample end-->
+
+                <!--Service start-->
+                <div class="py-2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="text-black-dark">Services</h5>
+                        </div>
+                        <div class="col-md-6  align-items-end">
+                            <a href="">
+                                <h6 class="view mx-2 my-1 float-right text-black">All Services</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 text-center mb-1">
+                            <div class="bg-white py-4 px-1 rounded box services">
+                                <img src="/assets/img/services/Request REP Visit.png" alt="services">
+                                <h6 class="text-black">Request REP Visit</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center mb-1">
+                            <div class="bg-white py-4 px-1 rounded box services">
+                                <img src="/assets/img/services/Request MSL Visit.png" alt="services">
+                                <h6 class="text-black">Request MSL Visit</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center mb-1">
+                            <div class="bg-white py-4 px-1 rounded box services">
+                                <img src="/assets/img/services/Request Samples.png" alt="services">
+                                <h6 class="text-black">Request Samples</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center mb-1">
+                            <div class="bg-white py-4 px-1 rounded box services">
+                                <img src="/assets/img/services/Request Medical  information.png" alt="services">
+                                <h6 class="text-black">Request Medical information</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Service end-->
+
+                <!--Request Details start-->
+                <div class="py-2">
+                    <div class="row">
+                        <div class="col-md-6 pb-1">
+                            <h5>Request details</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bg-white request-table box">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Request No.</th>
+                                            <th>Company</th>
+                                            <th>Product</th>
+                                            <th>Date</th>
+                                            <th>Services</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>234</td>
+                                            <td>company</td>
+                                            <td>product</td>
+                                            <td>23/12/2000</td>
+                                            <td>Request REP Visit</td>
+                                            <td>pending</td>
+                                            <td><a href=""><img src="/assets/img/action/eye.png" alt="view"></a>
+                                                <a href=""><img src="/assets/img/action/delete.png" alt="delete"></a>
+                                                <a href=""><img src="/assets/img/action/edit.png" alt="edit"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>234</td>
+                                            <td>company</td>
+                                            <td>product</td>
+                                            <td>23/12/2000</td>
+                                            <td>Request REP Visit</td>
+                                            <td>pending</td>
+                                            <td><a href=""><img src="/assets/img/action/eye.png"></a>
+                                                <a href=""><img src="/assets/img/action/delete.png"></a>
+                                                <a href=""><img src="/assets/img/action/edit.png"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>234</td>
+                                            <td>company</td>
+                                            <td>product</td>
+                                            <td>23/12/2000</td>
+                                            <td>23</td>
+                                            <td>pending</td>
+                                            <td><a href=""><img src="/assets/img/action/eye.png"></a>
+                                                <a href=""><img src="/assets/img/action/delete.png"></a>
+                                                <a href=""><img src="/assets/img/action/edit.png"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>234</td>
+                                            <td>company</td>
+                                            <td>product</td>
+                                            <td>23/12/2000</td>
+                                            <td>23</td>
+                                            <td>pending</td>
+                                            <td><a href=""><img src="/assets/img/action/eye.png"></a>
+                                                <a href=""><img src="/assets/img/action/delete.png"></a>
+                                                <a href=""><img src="/assets/img/action/edit.png"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="">
+                                    <h6 class="view mr-3 mb-1 text-black float-right">View Details</h6>
+                                </a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!--Request Details end-->
+
+                <!--Recent activity and product details start-->
+                <div class="py-2">
+                    <div class="row">
+                        <!--Recent activity-->
+                        <div class="col-lg-5">
+                            <div class="bg-white box request-box">
+                                <div class="d-flex p-2">
+                                    <div class="w-100">
+                                        <h5 class="title text-black">Recent Activity</h5>
+                                    </div>
+                                    <div class="dropdown w-100 text-right">
+                                        <button onclick="myFunction0()" class="dropbtn">This Week<i
+                                                class="fa fa-caret-down ml-1" aria-hidden="true"></i></button>
+                                        <div id="myDropdown0" class="dropdown-content text-left">
+                                            <a class="dropdown-item" href="#">Last Month</a>
+                                            <a class="dropdown-item" href="#">Last year</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="tab-items d-flex px-2 py-1">
+                                        <div class="company-name">
+                                            <h6 class="text-black">Company Name</h6>
+                                            <p>Product name</p>
+                                        </div>
+                                        <div class="date-time">
+                                            Nov 27, 2019 11:35PM.
+                                        </div>
+                                    </div>
+                                    <div class="tab-items d-flex px-2 py-1">
+                                        <div class="company-name">
+                                            <h6 class="text-black">Company Name</h6>
+                                            <p>Product name</p>
+                                        </div>
+                                        <div class="date-time">
+                                            Nov 27, 2019 11:35PM.
+                                        </div>
+                                    </div>
+                                    <div class="tab-items d-flex px-2 py-1">
+                                        <div class="company-name">
+                                            <h6 class="text-black">Company Name</h6>
+                                            <p>Product name</p>
+                                        </div>
+                                        <div class="date-time">
+                                            Nov 27, 2019 11:35PM.
+                                        </div>
+                                    </div>
+                                    <div class="tab-items d-flex px-2 py-1">
+                                        <div class="company-name">
+                                            <h6 class="text-black">Company Name</h6>
+                                            <p>Product name</p>
+                                        </div>
+                                        <div class="date-time">
+                                            Nov 27, 2019 11:35PM.
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <h6 class="view mx-2 my-1 float-right text-black">View Activities</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <!--product details-->
+                        <div class="col-lg-7">
+                            <div class="bg-white overflow-hidden box request-box  p-2">
+                                <div class="w-100 pb-2">
+                                    <h5 class="product-title text-black">Recent Product</h5>
+                                </div>
+                                <div class="product-list">
+                                    <div class="row">
+                                        <div class="col-xl-6 d-lg-flex px-2 py-1">
+                                            <img src="/assets/img/products/Image-17.png" alt="product">
+                                            <div class="d-centered pl-1 product-desc">
+                                                <h6 class="text-black">Product Name</h6>
+                                                <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 d-lg-flex px-2 py-1">
+                                            <img src="/assets/img/products/product-jpeg-500x500.png" alt="product">
+                                            <div class="d-centered pl-1 product-desc">
+                                                <h6 class="text-black">Product Name</h6>
+                                                <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 d-lg-flex px-2 py-1">
+                                            <img src="/assets/img/products/ore.png" alt="product">
+                                            <div class="d-centered pl-1 product-desc">
+                                                <h6 class="text-black">Product Name</h6>
+                                                <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 d-lg-flex px-2 py-1">
+                                            <img src="/assets/img/products/Remifentanil_group.png" alt="product">
+                                            <div class="d-centered pl-1 product-desc">
+                                                <h6 class="text-black">Product Name</h6>
+                                                <p>Description Contrary to popular belief, Lorem Ipsum is not</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a href="">
+                                                <h6 class="view mb-1 mr-1 float-right text-black">View all products
+                                                </h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Recent activity and product details end-->
+            </div>
+            <!--Body end-->
+        </section>
+        <!-- Page Level Scripts -->
+        <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
